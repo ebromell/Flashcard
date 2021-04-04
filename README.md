@@ -15,8 +15,9 @@ This project checks for
 ```
 Use of any non-pure functions
 Use of any variable or function names that can be improved.
-Use of if statement to bound lower and upper limits of the focus or break duration. This is because using Math.min() and Math.max() appropriately eliminates the need for if statements with numeric boundaries.
-Use of if statements in the returned JSX. Although there is nothing wrong with using conditional statements embedded in JSX, avoiding them generally makes the code easier to understand and maintain.
-Use of components with multiple responsibilities or multiple reasons to re-render. For example, if the time format or the upper bound for the focus duration change, consider how many components would need to re-render.
-Lots of conditional logic embedded in the useInterval() hook. Most logic should be broken out into small, single-responsibility pure functions that mutate the state as necessary.
+Use of if statement to bound lower and upper limits of the focus or break duration. 
+Use of if statements in the returned JSX. 
+Use of components with multiple responsibilities or multiple reasons to re-render. 
+Lots of conditional logic embedded in the useInterval() hook.
+Logic should be broken out into small, single-responsibility pure functions that mutate the state as necessary.
 ```
